@@ -29,13 +29,7 @@ fu! s:OpenOrJump(pos)
   let buf=a:pos[0]
   let line=a:pos[1]
   let col=a:pos[2]
-
-  let bufwinnr=bufwinnr(bufnr(buf))
-  if bufwinnr >= 0
-    execute 'normal' bufwinnr."\<C-w>w"
-  else
-    execute 'b' buf
-  endif
+  execute 'drop' buf
   call cursor(line, col)
 endfunc
 
