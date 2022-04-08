@@ -34,7 +34,7 @@ fu! s:OpenOrJump(pos)
   if bufwinnr >= 0
     execute 'normal' bufwinnr."\<C-w>w"
   else
-    execute 'sb' buf
+    execute 'b' buf
   endif
   call cursor(line, col)
 endfunc
