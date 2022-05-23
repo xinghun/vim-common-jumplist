@@ -24,7 +24,7 @@ nnoremap <silent> <C-w>k :call common_jumplist#PushLocation()<CR><C-w>k
 nnoremap <silent> <C-w>l :call common_jumplist#PushLocation()<CR><C-w>l
 
 " BufRead    starting to edit a new buffer, after reading the file
-" autocmd BufRead * call common_jumplist#PushLocation()
+autocmd BufRead * call common_jumplist#PushLocation()
 
 nnoremap <silent> <C-o> :call common_jumplist#JumpBack()<CR>
 nnoremap <silent> <C-i> :call common_jumplist#JumpForward()<CR>
